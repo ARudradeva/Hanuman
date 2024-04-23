@@ -1,0 +1,234 @@
+body {
+    width: auto;
+    height:50%;
+
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index:-1;/*Ensure video is behind other content*/
+}
+
+#bg-video {
+   position: fixed;
+   right: 0;
+   bottom:10px;
+   min-width:100%;
+   min-height:100%;
+   top: 0;
+}
+
+.icon{
+    width:10px;
+    height:10px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    width:1200px;
+    height:75px;
+    margin: auto;
+}
+
+.logo{
+    font-family:Arial;
+    padding-left:10px;
+    float:left;
+    padding-top: 15px;
+}
+
+.menu{
+    width:400px;
+    float:left;
+    height:70px;
+}
+
+
+
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style:none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-family:Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:#00a69c;
+}
+
+
+
+.Search{
+    width:330px;
+    float:left;
+    margin-left: 290px;
+}
+
+
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #00a69c;
+    border: 2px solid #00a69c;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    
+
+
+}
+
+.srch{
+    font-family:'Times New Roman';
+    width: 200px;
+    height:40px;
+    background:transparent;
+    border: 1px solid #00a69c;
+    margin-top: 13px;
+    color:#fff;
+    border-right:none;
+    font-size: 16px;
+    margin-left: 690px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+
+}
+
+
+
+.btn:focus{
+    outline:none;
+}
+
+.srch:focus{
+    outline:none;
+}
+
+ /* Keyframes for text animation */
+ @keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Keyframes for text animation */
+ @keyframes rotate {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateY(-100); }
+  }
+
+
+
+.content{
+    width:1200px;
+    height:auto;
+    margin:auto;
+    color:rgb(210, 65, 25);
+    position: relative;
+margin-left: 280px;
+margin-top: 70px;
+font-size: large;
+text-shadow: 3px 1px 3px orange;
+animation: rotate 2s linear;
+
+}
+
+content:nth-child(odd) {
+    animation: 5s;
+}
+
+.content3{
+    width:1200px;
+    height:auto;
+    margin:auto;
+    color: rgb(57, 140, 12);
+    position: relative;
+margin-left: 60px;
+margin-top: 10px;
+font-size: 23px;
+text-shadow: 1px 1px 3px orange;
+animation: slideIn 3s ease-in-out forwards;
+}
+
+.content1{
+    font-size: 60px;
+    color: darkorange;
+    margin-left: 370px;
+    margin-top: 10px;
+    animation: bounce 1s ease-in-out 2; /* Bounce 4 times with a duration of 2 seconds */
+}
+
+.content2{
+    font-size: 60px;
+    color: turquoise;
+    margin-left: 420px;
+    margin-top: 260px;
+    text-shadow: 2px 2px 10px rgb(54, 32, 142);
+    animation: appear 0s ease-in-out forwards; /* Animation with no duration */
+  }
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-30px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-15px); }
+  }
+
+  @keyframes appear {
+    0% { opacity: 0; } /* Start with opacity 0 */
+    100% { opacity: 1; } /* End with opacity 1 */
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
